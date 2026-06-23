@@ -4,6 +4,10 @@
 
 **▶️ Ver demo en vivo → https://dmxstudio.github.io/dmx-web-brand-guidelines-template/**
 
+| Modo claro | Modo oscuro |
+|:----------:|:-----------:|
+| ![Meridian brand book — modo claro](assets/img/screenshot-light.png) | ![Meridian brand book — modo oscuro](assets/img/screenshot-dark.png) |
+
 Plantilla profesional de *brand guidelines*, **multipágina, bilingüe (ES/EN), responsive e imprimible**, construida en **HTML + CSS + JS estático** (sin build, portable). Pensada como base reutilizable y para integrarse a un sistema mayor. Marca demo ficticia: **Meridian** ("Aligned by design").
 
 Este README **complementa** [`brandbook-catalog.json`](./brandbook-catalog.json) (el índice machine-readable de todo el contenido).
