@@ -21,11 +21,12 @@
 .menu-btn i { font-size:24px; }
 
 /* Mobile drawer */
-@media (max-width:820px) {
+@media (max-width:1000px) {
   .nav-in { gap:var(--s2); padding:0 var(--s4); }
   .brand { margin-right:auto; }
-  .menu-btn { padding:6px 0 6px 6px; }
-  .menu-btn { display:flex; }
+  .menu-btn { display:flex; width:44px; height:44px; padding:0; justify-content:center; }
+  .theme-btn { width:40px; height:40px; }
+  .lang button { padding:9px 13px; }
   .nav-links { position:absolute; top:var(--nav-h); left:0; right:0; flex-direction:column; align-items:stretch; gap:2px; background:var(--surface); border-bottom:1px solid var(--line); box-shadow:var(--shadow); padding:var(--s3) var(--s4) var(--s4); overflow:visible; display:none; }
   .nav-links.open { display:flex; }
   .nav-links a { padding:11px var(--s3); }
@@ -40,7 +41,7 @@
 .subnav a.active { color:var(--accent-ink); border-bottom-color:var(--brand); }
 .subnav a .tn { font-family:var(--font-mono); font-size:var(--fs-xs); color:var(--text-mut); }
 .subnav a.active .tn { color:var(--brand); }
-@media (max-width:680px){ .subnav-in { padding:0 var(--s4); } }
+@media (max-width:768px){ .subnav-in { padding:0 var(--s4); -webkit-mask-image:linear-gradient(90deg,#000 90%,transparent); mask-image:linear-gradient(90deg,#000 90%,transparent); } }
 
 /* Hide main nav on scroll-down, keep subnav pinned; reveal on scroll-up */
 .site-nav, .subnav { transition: transform .32s cubic-bezier(.4,0,.2,1); will-change: transform; }
@@ -59,8 +60,15 @@ body.nav-up .subnav { transform: translateY(calc(-1 * var(--nav-h))); }
 .pager .nx:hover { border-color:var(--brand-600); background:var(--brand-600); }
 .pager .nx .dir { color:rgba(255,255,255,.82); }
 .pager .nx .tt { color:#fff; }
+@media (max-width:768px){ .pager { padding:var(--s6) var(--s4) var(--s8); } }
+@media (max-width:640px){
+  .pager { flex-direction:column; gap:var(--s3); }
+  .pager a, .pager .nx { max-width:none; }
+  .pager .nx { margin-left:0; align-items:flex-start; text-align:left; }
+}
 
 /* Back to top */
 .to-top { position:fixed; right:20px; bottom:20px; width:42px; height:42px; border-radius:50%; border:1px solid var(--line-strong); background:var(--surface); color:var(--text); cursor:pointer; display:none; align-items:center; justify-content:center; box-shadow:var(--shadow); z-index:90; }
 .to-top.show { display:flex; }
 .to-top i { font-size:20px; }
+@media (max-width:640px){ .to-top { right:12px; bottom:12px; width:44px; height:44px; } }
