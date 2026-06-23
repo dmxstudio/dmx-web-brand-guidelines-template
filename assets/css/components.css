@@ -110,8 +110,8 @@
 /* ============ Grid + spacing diagrams ============ */
 .griddiag { display:grid; grid-template-columns:repeat(12,1fr); gap:6px; padding:var(--s4); border:1px solid var(--line); border-radius:var(--r-lg); background:var(--bg-soft); }
 .griddiag span { height:60px; background:var(--brand-100); border-radius:3px; }
-.spacing-scale { display:flex; gap:var(--s4); align-items:flex-end; flex-wrap:wrap; }
-.sp { text-align:center; }
+.spacing-scale { display:flex; gap:var(--s4); align-items:flex-end; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.sp { text-align:center; flex:0 0 auto; }
 .sp .bar { background:var(--brand); border-radius:3px 3px 0 0; width:30px; margin:0 auto; }
 .sp .v { font-family:var(--font-mono); font-size:11px; color:var(--text-mut); margin-top:4px; }
 
@@ -260,4 +260,6 @@ a.dlrow:hover { text-decoration:none; }
   .cs-box::before { inset:var(--s5); }
   .tonal span { font-size:11px; }
   .spec th, .spec td { padding:8px; }
+  .spacing-scale { gap:var(--s2); }
+  .sp .bar { width:20px; }
 }
