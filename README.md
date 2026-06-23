@@ -1,5 +1,9 @@
 # Meridian — Brand Guidelines (plantilla)
 
+[![Demo en vivo](https://img.shields.io/badge/Demo-en%20vivo-2348E0?style=for-the-badge&logo=github)](https://dmxstudio.github.io/dmx-web-brand-guidelines-template/) [![Licencia](https://img.shields.io/badge/Licencia-CC%20BY--NC%204.0-555555?style=for-the-badge)](./LICENSE)
+
+**▶️ Ver demo en vivo → https://dmxstudio.github.io/dmx-web-brand-guidelines-template/**
+
 Plantilla profesional de *brand guidelines*, **multipágina, bilingüe (ES/EN), responsive e imprimible**, construida en **HTML + CSS + JS estático** (sin build, portable). Pensada como base reutilizable y para integrarse a un sistema mayor. Marca demo ficticia: **Meridian** ("Aligned by design").
 
 Este README **complementa** [`brandbook-catalog.json`](./brandbook-catalog.json) (el índice machine-readable de todo el contenido).
