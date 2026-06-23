@@ -8,10 +8,11 @@ Este README **complementa** [`brandbook-catalog.json`](./brandbook-catalog.json)
 
 ## De un vistazo
 
-- **6 páginas / 54 secciones** · core 25 · rec 24 · adv 5 · con media 32 · solo-texto 22
+- **6 páginas / 55 secciones** · core 26 · rec 24 · adv 5 · con media 33 · solo-texto 22
 - **Bilingüe ES/EN** con toggle (persistido en `localStorage`); títulos con nombre estándar EN
 - **Dirección visual B · "Sistema suizo"**: cobalto `#2348E0`, Space Grotesk + Inter, neutros fríos
 - IA validada contra estándar internacional (IBM, Mailchimp, Material, Atlassian, Audi, Uber, Spotify) + la referencia *flowguide*
+- **Modo claro/oscuro (web)**: tema por tokens de rol, toggle persistido (`localStorage`), anti-FOUC y metas `color-scheme`/`theme-color`; los demostradores de marca (swatches, logos, mockups) **no se invierten**. Guía dedicada en la sección 3.7
 
 ## Stack y cómo correr
 
@@ -87,14 +88,24 @@ Fechas, horas, números, moneda, porcentaje, rangos, teléfono y unidades en **e
 
 ## Descargables reales (`assets/downloads/`)
 
-`meridian.tokens.json` (W3C) · `meridian.tailwind.js` · `meridian.formats.json` · `meridian-colors.json` · `meridian-logo.svg` · `llms.txt` · `meridian-voice.md` (system prompt de voz) · `AGENTS.md` · `meridian.mcp.json`. En la guía se listan junto a binarios demo (fonts/plantillas/skills/.zip, Figma/Pencil) y el botón "Brand guidelines" dispara imprimir/PDF.
+`meridian.tokens.json` (W3C) · `meridian.tailwind.js` · `meridian.dark.css` · `meridian.formats.json` · `meridian-colors.json` · `meridian-logo.svg` · `llms.txt` · `meridian-voice.md` (system prompt de voz) · `AGENTS.md` · `meridian.mcp.json`. En la guía se listan junto a binarios demo (fonts/plantillas/skills/.zip, Figma/Pencil) y el botón "Brand guidelines" dispara imprimir/PDF.
 
 ## Notas de integración
 
 - Los `id` de sección son la llave de unión con cualquier sistema: coinciden con anclas `#id` y con las keys i18n `sections.<id>` / `purpose.<id>`.
-- El contenido bilingüe vive en `assets/i18n/{es,en}.json` (namespaces: `nav`, `ui`, `home`, `pages`, `sections`, `purpose`, `viz`, `p3`, `fmt`).
+- El contenido bilingüe vive en `assets/i18n/{es,en}.json` (namespaces: `nav`, `ui`, `home`, `pages`, `sections`, `purpose`, `viz`, `dm`, `p3`, `fmt`).
 - `tier` + `media` + `mediaTypes` permiten mapear cada sección a campos/uploaders/validaciones de tu sistema.
 - Las secciones `adv` (sonora, data-viz, vehículos) van como placeholders demostrativos: actívalas solo donde la marca tenga ese touchpoint.
+
+## Licencia
+
+© 2026 **DMX Studio**. Publicado bajo **Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)** — texto completo en [`LICENSE`](./LICENSE).
+
+- ✅ **Libre de usar, copiar y adaptar** — siempre con **atribución** a DMX Studio (crédito visible + enlace al repositorio y a la licencia).
+- 🚫 **No comercial**: no se permite **vender** el template ni usarlo con fines comerciales **sin permiso y remuneración previa**.
+- 💼 ¿Uso comercial o licencia a medida? Escríbenos a **designomexico@gmail.com**.
+
+`SPDX-License-Identifier: CC-BY-NC-4.0`
 
 ---
 
